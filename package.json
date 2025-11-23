@@ -1,0 +1,38 @@
+{
+  "name": "k8s-express-api-example",
+  "version": "1.0.0",
+  "description": "An example Express.js API using best practises",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint --fix .",
+    "test": "jest --verbose --runInBand"
+  },
+  "keywords": [
+    "Docker",
+    "Kubernetes",
+    "Express.js",
+    "Node.js"
+  ],
+  "author": "Tero Tuomala",
+  "license": "MIT",
+  "dependencies": {
+    "@godaddy/terminus": "^4.9.0",
+    "axios": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.0.0",
+    "helmet": "^8.0.0",
+    "ioredis": "^5.0.0",
+    "pino": "^10.0.0",
+    "pino-http": "^11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "9.39.1",
+    "jest": "30.2.0",
+    "pino-pretty": "13.1.2",
+    "nodemon": "3.1.11",
+    "supertest": "7.1.4"
+  }
+}
