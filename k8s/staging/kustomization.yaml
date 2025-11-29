@@ -27,3 +27,7 @@ images:
 - name: IMAGE_NAME
   newName: ghcr.io/terotuomala/api
   newTag: 748938cd71bf084d4ad4219fbb5d60ff44c8a64e
+
+# Patch the Deployment to add imagePullSecrets
+patchesStrategicMerge:
+- imagepullsecret-patch.yaml
